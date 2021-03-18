@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+@font-face {
+    font-family: "market-deco";
+    src: url("/assets/fonts/market_deco.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

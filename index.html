@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Wines</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+
+    <!--Opengraph-->
+    <meta property="og:url"           content="https://progressivewines.club" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Progressive Wines" />
+    <meta property="og:description"   content="Todo lo que siempre amamos sigue sonando" />
+    <meta property="og:image"         content="/assets/img/hero-desktop-2.jpg" />
+
+</head>
+
+<body class="bg-black font-sans antialiased">
+
+    <section
+        class="relative flex flex-col justify-center items-start sm:items-end min-h-screen object-center bg-no-repeat object-cover w-full">
+        <img src="/assets/img/hero-desktop-3.jpg" alt="Progressive Wine"
+            class="hidden sm:block sm:absolute h-full w-full object-cover object-left">
+        <img src="/assets/img/hero-mobile-2.jpg" alt="Progressive Wine"
+        class="absolute sm:hidden h-full w-full object-cover object-center">
+        <nav class="absolute top-0 left-0 md:bottom-0 md:top-auto md:mb-6 lg:ml-20 lg:pl-0">
+            <ul class="list-none pt-6 top-0 relative font-market">
+                <li class="uppercase tracking-wide block text-white text-base ml-6 lg:text-xl lg:ml-0">
+                    <a href="/#comprar" class="nav-link px-6">
+                        Tickets
+                    </a>
+                </li>
+                <li class="uppercase tracking-wide block text-white text-base ml-6 mt-2 lg:text-xl lg:ml-0">
+                    <a href="#lineup" class="nav-link px-6">
+                        Line Up
+                    </a>
+                </li>
+                <li class="uppercase tracking-wide block text-white text-base ml-6 mt-2 lg:text-xl lg:ml-0">
+                    <a href="#wlw" class="nav-link px-6">
+                        Wine Room
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="px-6 relative md:w-1/2 md:right-0 lg:pl-10">
+            <svg id="logo" class="logo-dropshadow block w-4/5 h-auto fill-current mx-auto md:mr-auto md:ml-0" version="1.1" id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+                viewBox="0 0 762 310" xml:space="preserve">
+                <defs>
+                    <path id="SVGID_1_" d="M-580-384h1920V696H-580z"/>
+                </defs>
+                <path class="st0"
+                    d="M287.5 27.7c6.3-.2 12.1.6 17.4 2.5 7.7 2.5 14.4 6.6 20.2 12.5 5.8 5.8 9.9 12.6 12.4 20.3 1.6 5 2.3 10.1 2.3 15.4 0 5.8-1 11.5-2.9 17s-4.7 10.6-8.5 15.1l17.4 41.3h-21.3l-11.9-28.4c-3.2 1.6-5.8 2.6-7.8 3.3v25.1h-19.6V28l2.3-.3zm17.4 53.1v24.5c2.1-1 4.2-2.6 6.4-4.8 2.9-2.9 5.1-6.3 6.7-10.1 1.6-3.8 2.3-7.8 2.3-11.9 0-4.1-.8-8.1-2.3-11.9-1.6-3.8-3.8-7.2-6.7-10.1-2.2-2.2-4.3-3.8-6.4-4.8v29.1zM488.3 121.3c6.2 7 12.9 10.6 20 10.6 5 0 8.7-1.7 11.3-5.1 1.7-2 2.7-4.4 3.3-7.3.2-.9.3-2.2.3-3.9 0-1.8-.2-3.3-.6-4.5-.7-2.2-2.3-4.4-4.8-6.7-2.6-2.4-5.7-4.6-9.3-6.5l-6.5-3.7c-4.3-2.4-7.9-4.4-10.6-6.2-2.7-1.8-5.2-3.8-7.4-6.2-4.4-4.6-7.2-10.1-8.2-16.8-.3-1.8-.5-3.5-.5-5.1 0-5 1.1-9.5 3.3-13.7 2.9-5.9 7.1-10.4 12.7-13.7 2.7-1.5 5.6-2.7 8.7-3.6 3.4-.7 6.4-1.1 9-1.1 6.2 0 12 1.7 17.5 5 1.8.9 4.1 2.7 7.1 5.3 2.8 2.7 4.7 5 5.7 6.8l-16.4 10.6c-1.7-2.5-3.7-4.4-6.2-5.9-2.5-1.4-5.1-2.2-7.8-2.2-2.9 0-5.5.7-7.8 2-2.4 1.5-4.1 3.3-5.1 5.4-.8 1.9-1.2 3.6-1.2 5.3l.2 1.7c.4 2.3 1.6 4.5 3.4 6.7.6.7 1.4 1.4 2.3 2 .9.6 2.1 1.3 3.4 2l2.6 1.7c2 1.2 4.2 2.5 6.7 3.9 2.3 1.2 4 2.2 5.1 2.9 4.7 2.7 8.7 5.6 12.3 8.8 2.5 2.3 4.4 4.4 5.9 6.4 2 3 3.4 5.8 4.3 8.4 1.1 3.3 1.7 6.9 1.7 10.9 0 1.8-.2 4.1-.6 7-.8 6.4-3.3 12-7.4 16.8-4.2 4.8-9.4 8.2-15.4 10.2-4 1.3-7.9 2-11.5 2-1.3 0-3.5-.2-6.4-.6-5.9-1.1-11.2-3.2-15.8-6.2-4.7-3.1-8.7-6.6-12.1-10.6l14.8-12.8zM417.5 121.3c6.2 7 12.9 10.6 20 10.6 5 0 8.7-1.7 11.3-5.1 1.7-2 2.7-4.4 3.3-7.3.2-.9.3-2.2.3-3.9 0-1.8-.2-3.3-.6-4.5-.7-2.2-2.3-4.4-4.8-6.7-2.6-2.4-5.7-4.6-9.3-6.5l-6.5-3.7c-4.3-2.4-7.9-4.4-10.6-6.2-2.7-1.8-5.2-3.8-7.4-6.2-4.4-4.6-7.2-10.1-8.2-16.8-.3-1.8-.5-3.5-.5-5.1 0-5 1.1-9.5 3.3-13.7 2.9-5.9 7.1-10.4 12.7-13.7 2.7-1.5 5.6-2.7 8.7-3.6 3.4-.7 6.4-1.1 9-1.1 6.2 0 12 1.7 17.5 5 1.8.9 4.1 2.7 7.1 5.3 2.8 2.7 4.7 5 5.7 6.8l-16.4 10.6c-1.7-2.5-3.7-4.4-6.2-5.9-2.5-1.4-5.1-2.2-7.8-2.2-2.9 0-5.5.7-7.8 2-2.4 1.5-4.1 3.3-5.1 5.4-.8 1.9-1.2 3.6-1.2 5.3l.2 1.7c.4 2.3 1.6 4.5 3.4 6.7.6.7 1.4 1.4 2.3 2 .9.6 2.1 1.3 3.4 2l2.6 1.7c2 1.2 4.2 2.5 6.7 3.9 2.3 1.2 4 2.2 5.1 2.9 4.7 2.7 8.7 5.6 12.3 8.8 2.5 2.3 4.4 4.4 5.9 6.4 2 3 3.4 5.8 4.3 8.4 1.1 3.3 1.7 6.9 1.7 10.9 0 1.8-.2 4.1-.6 7-.8 6.4-3.3 12-7.4 16.8-4.2 4.8-9.4 8.2-15.4 10.2-4 1.3-7.9 2-11.5 2-1.3 0-3.5-.2-6.4-.6-5.9-1.1-11.2-3.2-15.8-6.2-4.7-3.1-8.7-6.6-12.1-10.6l14.8-12.8zM596.9 46.9h-14.2v84.9h14.2v19.5h-46.8v-19.5h14.2V46.9h-14.2V27.4h46.8zM673.6 27.4l-25 123.9h-22.3L601.4 27.4h19.3l16.6 83.4 16.4-83.4zM729.8 46.6h-29.3v33.5h29.3v19.1h-29.3v32.9h29.3v19.2h-48.6V27.4h48.6zM75.1 277.3V162.1h5.3v124h-6.5l-6.7-13-5.3-10.2-8.7-17.2-8.4 16.3-5.3 10.4-7.1 13.8h-6.1v-124h5.3v114.4l7.9-15.5 13.7-26.5 21.9 42.7zm-21.9-59.8L39.5 244v-81.9h5.3v60.4l8.4-20.8 8.7 21.7v-61.3h5.3V244l-14-26.5zM399.2 47h-29.3v33.5h29.3v19.1h-29.3v32.9h29.3v19.2h-48.5v-124h48.5zM26.4 151.4v-124c4.7 0 8.8.3 12.4.8 3.6.5 7.2 1.5 10.9 2.9 6.1 2.7 11.6 6.4 16.4 11 4.8 4.8 8.4 10.2 10.9 16.4 2.6 6.1 3.9 12.6 3.9 19.4 0 7-1.3 13.5-3.9 19.4-2.5 6.2-6.1 11.7-10.9 16.4-4.9 4.9-10.3 8.5-16.4 11l-3.7 1.4v25.1H26.4zM52.1 100c3-2.8 5.3-6.1 6.8-10 1.6-3.9 2.3-7.9 2.3-12s-.8-8.1-2.3-12c-1.6-3.9-3.8-7.2-6.8-10-2.2-2.2-4.2-3.8-6.2-4.8V105c2.1-1.3 4.2-2.9 6.2-5M87.9 27.4c6.3-.2 12.1.6 17.4 2.5 7.7 2.5 14.4 6.6 20.2 12.5 5.8 5.8 9.9 12.6 12.4 20.3 1.6 5 2.3 10.1 2.3 15.4 0 5.8-1 11.5-2.9 17s-4.7 10.6-8.5 15.1l17.4 41.3H125L113 123c-3.2 1.6-5.8 2.6-7.8 3.3v25.1H85.7V27.7l2.2-.3zm17.4 53V105c2.1-1 4.2-2.6 6.4-4.8 2.9-2.9 5.1-6.3 6.7-10.1 1.6-3.8 2.3-7.8 2.3-11.9 0-4.1-.8-8.1-2.3-11.9-1.6-3.8-3.8-7.2-6.7-10.1-2.2-2.2-4.3-3.8-6.4-4.8v29zM202.5 44.5c1.6 3.7 2.4 7.5 2.4 11.4v68c0 3.9-.8 7.7-2.4 11.4-1.6 3.7-3.9 6.8-6.8 9.4-2.5 2.2-5.4 3.9-8.7 5-3.3 1.2-6.8 1.8-10.4 1.8-7.2 0-13.4-2.3-18.6-6.8-2.9-2.6-5.1-5.7-6.8-9.4-1.6-3.7-2.4-7.5-2.4-11.4v-68c0-3.9.8-7.7 2.4-11.4 1.6-3.7 3.9-6.8 6.8-9.4 4.8-5 11-7.4 18.6-7.4 3.6 0 7.1.6 10.5 1.8 3.4 1.2 6.2 3.1 8.6 5.7 3 2.5 5.2 5.6 6.8 9.3m-19.3 4.6c-1.7-1.6-3.8-2.3-6.5-2.3-2.8 0-5 .8-6.7 2.3-2.1 1.8-3.1 4-3.1 6.8v68c0 2.8 1 5.1 3.1 6.8 1.7 1.6 3.9 2.3 6.7 2.3 2.7 0 4.9-.8 6.5-2.3 2.1-1.8 3.1-4 3.1-6.8v-68c0-2.8-1-5-3.1-6.8M274.6 99.1v52.3h-10.2c-3.4 0-6.5-.4-9.3-1.1-4.4-1.1-8.6-2.7-12.4-4.7-4.3-2.5-8.2-5.4-11.6-8.8-6.6-6.6-11.5-14.5-14.6-23.7-2.6-7.4-3.9-15.2-3.9-23.1 0-11.2 2.2-21.4 6.7-30.7 3.9-8.7 9.8-16 17.7-22 3.8-3 8.2-5.3 13-7 4.7-1.7 9.6-2.5 14.9-2.5v19.6c-5.8 0-11.2 1.9-16.3 5.6-4.9 3.9-8.7 8.8-11.6 14.7-3.2 6.5-4.8 13.8-4.8 21.9 0 6.1.9 11.8 2.8 17.2 2.6 6.8 5.9 12.3 9.9 16.3 3.1 3.1 6.5 5.4 10.2 6.8V99.1h19.5z" />
+                <path class="st0"
+                    d="M41.7 167.7h-13l-2.3-5.6h18.4zM77.3 167.7h-13l-2.3-5.6h18.4zM235.9 267v-38.3h34.9v5.4h-29.3V267h29.3v5.6h-34.9V267zm-8.3-46.6V280.8h43.1v5.4h-48.6v-124h48.6v5.4h-43.1v52.8zm43.2 0h-34.9v-44.5h34.9v5.6h-29.3V215h29.3v5.4" />
+                <path class="st0"
+                    d="M265.2 178.1v-13l5.6-2.3v18.4zM265.2 283.1v-12.9l5.6-2.4v18.4zM265.2 230.3v-12.9l5.6-2.4v18.4zM109.1 280.6h27.3v5.6H89.6v-5.6h19.5zm7.8-104.4h19.6v5.6h-14.3v84.9h14.3v5.6h-19.6v-96.1zm0-8.4H89.6v-5.6h46.9v5.6h-19.6zm-7.8 8.4v96.1H89.6v-5.6h14.3v-84.9H89.6v-5.6h19.5z" />
+                <path class="st0"
+                    d="M95.2 165.9v12.9l-5.6 2.4v-18.4zM130.9 178.1v-13l5.5-2.3v18.4zM95.2 270.9v13l-5.6 2.3v-18.4zM130.9 283.1v-12.9l5.5-2.4v18.4zM322.4 184.1c-2.5-1.4-5.1-2.2-7.8-2.2-2.9 0-5.5.7-7.8 2-2.4 1.4-4.1 3.3-5.1 5.4-.8 1.9-1.2 3.6-1.2 5.3l.2 1.7c.4 2.3 1.6 4.5 3.4 6.7.6.7 1.4 1.4 2.3 2 .9.6 2.1 1.3 3.4 2l2.6 1.7c2 1.2 4.2 2.5 6.7 3.9 2.3 1.2 4 2.2 5.1 2.9 4.7 2.7 8.7 5.6 12.3 8.8 2.5 2.3 4.4 4.4 5.9 6.4 2 3 3.4 5.8 4.3 8.4 1.1 3.3 1.7 6.9 1.7 10.9 0 1.8-.2 4.1-.6 7-.8 6.4-3.3 12-7.4 16.8-4.2 4.8-9.4 8.2-15.4 10.2-4 1.3-7.9 2-11.5 2-1.3 0-3.5-.2-6.4-.6-5.9-1.1-11.2-3.2-15.8-6.2-4.7-3.1-8.7-6.6-12.1-10.6l4.2-3.6c3.1 3.6 6.7 6.7 10.9 9.3 4.7 2.9 9.3 4.7 13.8 5.4 1.9.3 3.7.5 5.6.5 3.4 0 6.6-.5 9.6-1.6 5.3-1.8 9.5-4.6 12.7-8.5 3.4-4 5.5-8.7 6.4-14 .3-1.9.5-3.9.5-6.1 0-3.6-.5-6.7-1.4-9.2-1.4-4.4-4.3-8.6-8.7-12.6-2.9-2.5-6.7-5.2-11.5-8.1-.5-.3-2.4-1.4-5.7-3.4l-5.9-3.3-2.9-1.7c-2.4-1.3-4.6-3-6.7-5.1-2.8-2.9-4.4-6.1-4.8-9.6-.2-1.2-.3-2.2-.3-2.9 0-2.5.6-5 1.9-7.4 1.7-3.5 4.1-6.1 7.3-7.8 3.3-1.9 6.8-2.8 10.6-2.8s7.3 1 10.9 3c3.5 2 6.1 4.6 7.8 7.7l-4.7 2.9c-1.8-2.2-3.9-4.1-6.4-5.6m16.8-3.3c-.4-.5-.8-.9-1.1-1.3l-2.6-2.8c-2.2-2-4.2-3.5-6.1-4.5-4.6-2.8-9.5-4.2-14.7-4.2-2.6 0-5.1.3-7.6.9-2.2.5-4.6 1.5-7.3 2.9-4.7 2.7-8.2 6.5-10.6 11.3-1.8 3.7-2.6 7.6-2.6 11.5 0 6.8 2.4 12.8 7.3 17.8 2.1 2.2 4 3.8 5.7 5 2.9 1.9 6.1 3.7 9.6 5.6 1 .6 2.2 1.3 3.5 2 1.3.7 2.7 1.6 4.3 2.5 4.3 2.6 7.9 5.2 10.8 7.8 2.8 2.6 4.8 5.4 5.8 8.5.6 2 .9 4.1.9 6.4 0 2.1-.1 3.6-.3 4.7-.6 3.7-2.1 7-4.5 9.9-2.4 2.8-5.4 4.8-9 6.1-2.3.7-4.7 1.1-7.3 1.1-4.2 0-8.4-1.1-12.4-3.3-4-2.2-7.8-5.2-11.2-9.1l4.2-3.7c6.2 7 12.9 10.6 20 10.6 5 0 8.7-1.7 11.3-5.1 1.7-2 2.7-4.4 3.3-7.3.2-.9.3-2.2.3-3.9 0-1.8-.2-3.3-.6-4.5-.7-2.2-2.3-4.4-4.8-6.7-2.6-2.4-5.7-4.6-9.3-6.5l-6.5-3.7c-4.3-2.4-7.9-4.4-10.6-6.2-2.7-1.8-5.2-3.8-7.4-6.2-4.4-4.6-7.2-10.1-8.2-16.8-.3-1.8-.5-3.5-.5-5.1 0-5 1.1-9.5 3.3-13.7 2.9-5.9 7.1-10.4 12.7-13.7 2.7-1.6 5.6-2.7 8.7-3.6 3.4-.7 6.4-1.1 9-1.1 6.2 0 12 1.7 17.5 5 1.8.9 4.1 2.7 7.1 5.3 2.8 2.7 4.7 5 5.7 6.8l-4.5 2.4c-.4-.8-.9-.7-1.3-1.1" />
+                <path class="st0"
+                    d="M279.3 268.7l14.7-12.9 2.6 4.5-12.7 11.1zM328.6 190l16.5-10.5-4.3-3.7-14.6 9.4zM204 167.8h-13l-2.3-5.6h18.4zM192.2 280.6h13l2.3 5.6h-18.4zM154.5 280.6h12.9l2.4 5.6h-18.4zM171.9 167.8h-17.1l-2.3-5.6h18.4z" />
+                <path class="st0"
+                    d="M194.1 231.2l-5.6-10.3-23.7-43.6-.1 11.1v97.9h5.6v-87.5l18.2 33.7v53.8h5.6v-55.1zm0-69h-5.6v29.9l-16.3-29.9H166l22.5 41.3 5.6 10.2v-51.5zm-37.7 0v124h-5.6v-124h5.6zm51.7 124h-5.6v-124h5.6v124z" />
+            </svg>
+            <div class="md:pl-3">
+                <p class="titles text-white text-xl font-bold my-4 relative uppercase tracking-wide text-center md:text-left pl-1 md:pl-0">05.septiembre.2020
+                </p>
+
+                <div class="text-center md:text-left">
+                    <div class="wrapper text-center md:text-lef inline-block text-wine-blue text-xl font-semibold border border-white bg-white py-2 px-4 relative uppercase tracking-wide hover:border-wine-soft hover:bg-wine-soft hover:text-white transition duration-200 ease-in-out">
+                            Acceder al festival
+                            <div class="tooltip normal-case text-base leading-none">Podrás acceder el 05 de septiembre con tu entrada</div>
+                    </div>
+                </div>
+                
+                <div class="block mx-auto text-center md:text-left">
+                <a href="/#comprar" class="nav-link titles inline-block text-white text-xs mt-2 md:text-base text-center md:text-left">¿Todavía no tenés tu
+                    entrada?</a>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <section id="triggerMusica" class="py-6 h-auto overflow-hidden flex flex-col md:flex-row">
+    <div class="relative w-full md:w-1/2">
+            <div class="overflow-hidden md:mr-10">
+                <div class="img-hover relative flex justify-center items-center">
+                    <img src="/assets/img/musica-seccion.jpg" alt="Vinos que conectan"
+                        class="img-secciones w-full object-cover object-center transition duration-500 ease-in-out">
+                    <div class="absolute flex flex-col h-full justify-around items-center">
+                        <h1 class="titles text-center text-white font-market text-4xl leading-none lg:text-5xl font-bold uppercase tracking-wide transition duration-500 ease-in-out">Musica para Conectar
+                        </h1>
+                        <div class="bg-black w-2/3 p-6 md:p-10 mb-4">
+                            <p class="text-white text-center leading-none text-sm lg:text-base">Música instream para acompañarte estés donde estés y que disfrutemos juntos de movernos al ritmo de estos tiempos que nos desafían.</p>
+                            <p class="text-white text-center leading-none text-sm lg:text-base mt-4">Progressive Wines, todo lo que siempre amamos sigue sonando.
+                
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full mt-10 md:mt-0 md:w-1/2">
+            <div class="overflow-hidden md:ml-10">
+                <div class="img-hover relative flex justify-center items-center">
+                    <img src="/assets/img/vinos-seccion.jpg" alt="Vinos que conectan"
+                        class="img-secciones w-full object-cover object-center transition duration-500 ease-in-out">
+                    <div class="absolute flex flex-col h-full justify-around items-center">
+                        <h1 class="titles text-center text-white font-market text-4xl leading-none lg:text-5xl font-bold uppercase tracking-wide transition duration-500 ease-in-out">Vinos
+                            que conectan
+                        </h1>
+                        <div class="bg-black w-2/3 p-6 md:p-10 mb-4">
+                            <p class="text-white text-center leading-none text-sm lg:text-base">Esta experiencia está ideada para
+                                conectar con todos los sentidos, para disfrutar, compartir y aprender de la tertulia que el vino nos
+                                permite.</p>
+                            <p class="text-white text-center leading-none text-sm lg:text-base mt-4">En Progressive Wines maridamos
+                                música y vinos con el placer de crear buenos momentos.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lineup" class="pt-6">
+        <div class="img-hover relative overflow-hidden">
+            <img src="/assets/img/ale-lacroix.jpg" alt="Ale Lacroix"
+                class="img-artista object-cover object-center w-auto h-full md:hidden">
+            <img src="/assets/img/alexander-2.jpg" alt="Ale Lacroix"
+                class="object-cover object-top w-full max-h-screen hidden md:block transition duration-500 ease-in-out">
+            <div class="absolute top-0 left-0 pt-10 pl-6 lg:mt-20 lg:ml-20">
+                <h3
+                    class="text-white font-market uppercase tracking-wide text-left text-3xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-8xl titles">
+                    Ale
+                    Lacroix
+                </h3>
+                <p class="text-white text-sm md:text-base text-left w-1/2 md:w-1/3">Vamos a bailar y encender la noche
+                    con notas,
+                    ritmos y
+                    melodías
+                    junto a quien hace tiempo acompaña estos Progressive Wines con su música vibrante que nos saca del
+                    sillón ahora en vivo desde nuestro escenario virtual.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="img-hover relative overflow-hidden">
+            <img src="/assets/img/argie-boy.jpg" alt="Argie Boy"
+                class="img-artista object-cover object-center w-auto h-full md:hidden">
+            <img src="/assets/img/argie-boy.jpg" alt="Argie Boy"
+                class="object-cover object-center w-full max-h-screen hidden md:block transition duration-500 ease-in-out">
+            <div class="absolute top-0 left-0 pt-10 pl-6 lg:mt-20 lg:ml-20">
+                <h3
+                    class="text-white font-market uppercase tracking-wide text-left text-3xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-8xl titles">
+                    Argie Boy
+                </h3>
+                <p class="text-white text-sm md:text-base text-left mr-auto w-1/2 md:w-1/3">Argie Boy, también conocido como Martin Lamelas, es un dj y productor de progressive house Argentino que convoca ritmos actuales junto con los sonidos más puros del progressive house para sesiones enérgicamente espirituales, hipnóticas y atractivas para bailar de principio a fin.  </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="img-hover relative overflow-hidden">
+            <img src="/assets/img/yasmin.jpg" alt="Yasmin"
+                class="img-artista object-cover object-center w-auto h-full md:hidden">
+            <img src="/assets/img/yasmin-2.jpg" alt="Yasmin"
+                class="object-cover object-top w-full max-h-screen hidden md:block transition duration-500 ease-in-out">
+            <div class="absolute top-0 left-0 pt-10 pl-6 lg:mt-20 lg:ml-20">
+                <h3
+                    class="text-white font-market uppercase tracking-wide text-left text-3xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-8xl titles">
+                    Yasmin
+                </h3>
+                <p class="text-white text-sm md:text-base text-left w-1/2 md:w-1/3">Sonidos Techno e instrumentales, una
+                    mujer que nos pondra algo de fuego, la ansiedad de bailar ya se siente, subí la música porque Yas
+                    toca el 5 de Septiembre en Progressive Wines Club online.</p>
+            </div>
+        </div>
+    </section>
+    <section class="py-10  overflow-hidden">
+        <div class="w-1/2 xl:w-1/3">
+            <h3 class="font-market text-right text-white uppercase tracking-wide text-base md:text-2xl pb-2">Music Room
+            </h3>
+        </div>
+        <div id="linemusic" class="w-1/2 xl:w-1/3 border-b-4 border-wine-soft">
+        </div>
+        <div class="flex flex-col lg:flex-row justify-center xl:justify-around items-center max-w-screen-xl mx-auto">
+            <div class="pt-6 px-6 xl:w-1/4">
+                <p
+                    class="text-wine-soft uppercase tracking-wide font-market text-6xl xl:text-left px-6 leading-none font-bold">
+                    Musica<br>para<br>volar
+                </p>
+                <p
+                    class="texto-soft text-black uppercase tracking-wide font-market text-6xl xl:text-left px-6 leading-none font-bold">
+                    Music<br>Room
+                </p>
+            </div>
+            <div class="relative small-border-soft my-10 mx-10">
+                <div class="overflow-hidden">
+                    <img src="/assets/img/music-room.jpg" alt="Music Room" class="transform hover:scale-105 transition duration-500 ease-in-out">
+                    <p
+                        class="titles text-white leading-tight text-sm sm:text-lg pt-6 mr-4 mb-4 absolute right-0 top-0 md:top-auto w-1/2 md:pt-0 text-right transform md:-translate-y-full md:pr-6 md:pb-20 xl:pb-48 md:font-normal">
+                        Las puertas de esta sala
+                        están
+                        abiertas para todos
+                        los que quieran disfrutar de 6 horas del mejor Progressive House, Techno y Deep House presentado por
+                        distintos Djs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10 pt-6 overflow-hidden">
+        <div class="ml-auto w-1/2 xl:w-1/3">
+            <h3 class="font-market text-left text-white uppercase tracking-wide text-base md:text-2xl pb-2">Tasting Room
+            </h3>
+        </div>
+        <div id="linetasting" class="ml-auto w-1/2 xl:w-1/3 border-b-4 border-white">
+        </div>
+        <div
+            class="flex flex-col lg:flex-row-reverse justify-center xl:justify-around items-center max-w-screen-xl mx-auto">
+            <div class="pt-6 sm:pt-0 px-6 xl:w-1/4">
+                <p
+                    class="text-white uppercase tracking-wide font-market text-6xl xl:text-right px-6 sm:px-0 leading-none font-bold">
+                    Vinos<br>que<br>suenan<br>bien
+                </p>
+                <p
+                    class="texto-white text-black uppercase tracking-wide font-market text-6xl xl:text-right px-6 sm:px-0 leading-none font-bold">
+                    Tasting<br>Room
+                </p>
+            </div>
+            <div class="relative small-border-white my-10 mx-10">
+                <div class="overflow-hidden">
+                    <img src="/assets/img/tasting-room.jpg" alt="Tasting Room" class="transform hover:scale-105 transition duration-500 ease-in-out">
+                    <p
+                        class="titles text-white leading-tight text-sm sm:text-lg pt-6 mr-4 mb-4 absolute right-0 top-0 md:top-auto w-1/2 md:pt-0 text-right transform md:-translate-y-full md:pr-6 md:pb-20 xl:pb-48 md:font-normal">
+                        Sala de cata en donde los que amamos y creemos en el vino, nos encontramos con los enólogos y
+                        sommeliers más importantes de la escena.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10  overflow-hidden" id="wlw">
+        <div class="w-1/2 xl:w-1/3">
+            <h3 class="font-market text-right text-white uppercase tracking-wide text-base md:text-2xl pb-2">We Love
+                Wines
+            </h3>
+        </div>
+        <div id="linewlw" class="w-1/2 xl:w-1/3 border-b-4 border-wine-blue">
+        </div>
+        <div class="flex flex-col lg:flex-row justify-center xl:justify-around items-center max-w-screen-xl mx-auto">
+            <div class="pt-6 px-6 xl:w-1/4">
+                <p
+                    class="text-wine-blue uppercase tracking-wide font-market text-5xl text-left xl:text-left px-6 leading-none font-bold">
+                    Con<br>el<br>corazon
+                </p>
+                <p
+                    class="texto-blue text-black uppercase tracking-wide font-market text-6xl text-left xl:text-left px-6 leading-none font-bold">
+                    WLW<br>Room
+                </p>
+            </div>
+            <div class="relative small-border-blue my-10 mx-10">
+                <div class="overflow-hidden">
+                    <img src="/assets/img/wlw-room.jpg" alt="WLW Room" class="transform hover:scale-105 transition duration-500 ease-in-out">
+                    <p
+                        class="text-white text-center leading-tight text-sm font-semibold pt-6 md:absolute md:left-0 md:w-1/2 md:pt-0 md:text-left md:transform md:-translate-y-full md:pl-6 md:pb-20 xl:pb-48 xl:leading-relaxed md:font-normal">
+                        </p>
+                    <p
+                    class="titles text-white leading-tight text-sm sm:text-lg pt-6 mr-4 mb-4 absolute right-0 top-0 md:top-auto w-1/2 md:left-0 md:w-1/2 md:pt-0 md:text-left md:transform md:-translate-y-full md:pl-6 md:pb-20 xl:pb-48 xl:leading-relaxed md:font-normal">
+                    Los que amamos el buen vino sabemos que existen miles de maneras de degustar, pero una sola de disfrutarlo y es haciéndolo responsablemente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-20" id="comprar">
+        <h4 class="uppercase tracking-wide text-white text-2xl font-market text-center">Adquiere tu ticket</h4>
+        <p class="text-white text-center text-base leading-tight px-6 py-10 sm:pt-4 md:w-1/2 mx-auto">Al momento de comprar recibirás de forma automática<br> tu entrada con código de acceso al evento</p>
+        <div class="flex flex-col sm:flex-row justify-center items-center">
+            <a href="/tickets"
+                class="text-white uppercase tracking-wide text-center font-semibold p-4 sm:mr-12 border-2 border-wine-soft hover:bg-wine-soft transition duration-200 ease-in-out">Comprar
+                en
+                Argentina</a>
+            <a href="https://ticketplate.com/checkout/progressive-wine-2009052100" target="_blank"
+                class="text-white uppercase tracking-wide text-center font-semibold p-4 mt-4 sm:mt-0 border-2 border-wine-blue hover:bg-wine-blue transition duration-200 ease-in-out">Comprar
+                en el resto del mundo
+            </a>
+
+        </div>
+    </section>
+    <footer class="border-t border-white">
+        <div class="max-w-screen-xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <div>
+                <a href="https://www.facebook.com/progressivewines" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-10 w-10 fill-current text-white inline m-4 hover:opacity-75" viewBox="0 0 512 512">
+                        <title>Facebook Logo</title>
+                        <path
+                            d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/progressive_wines/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-10 w-10 fill-current text-white inline m-4 hover:opacity-75" viewBox="0 0 512 512">
+                        <title>Instagram Logo</title>
+                        <path
+                            d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z" />
+                        <path d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z" />
+                        <path
+                            d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z" />
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <p class="text-white text-center px-6 mb-4 sm:text-right text-sm">Copyright 2020 Progressive Wines.
+                    Todos
+                    los
+                    derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <!--Animaciones GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/animation.js"></script>
+</body>
+
+</html>
